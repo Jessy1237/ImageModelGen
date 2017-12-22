@@ -26,14 +26,13 @@ namespace com.Jessy1237.ImageModelGen
             {
                 Console.WriteLine("USAGE: ImageModelGen.exe 'image'");
             }
-
         }
 
         public static void WriteFile(string file, LinkedList<string> pixels)
         {
             StreamWriter modelFile = new StreamWriter(file + ".model");
 
-            foreach( string pixel in pixels)
+            foreach (string pixel in pixels)
             {
                 modelFile.WriteLine(pixel);
             }
